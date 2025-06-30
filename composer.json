@@ -1,0 +1,19 @@
+{
+    "name": "andreabsferrazza/phoog",
+    "description": "Phoog is a lightweight PHP library offering ultra-short debugging functions for quick variable inspection. Designed for speed and zero dependencies.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Phoog\\Deboog\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Andrea B Sferrazza",
+            "email": "a.sferrazza@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
