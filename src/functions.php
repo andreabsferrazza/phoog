@@ -50,5 +50,19 @@ function evcd($var){
 	evc($var);
 	die();
 }
-
-
+// deboog on file
+function dof($var,$filename="debug_log.json",$incremental=true){
+	$filenamepath = $filename;
+	if(file_exists($filenamepath) && $incremental){
+		$file_content = file_get_contents($filenamepath);
+		$data = json_decode($file_content,true);
+		if(isset($data) && array_key_exists("debug",$data)){
+			$data["debug"][]=array("datetime"=>date("Y-m-d H:i:s"), "data"=>$var);
+			file_put_contents($filenamepath,json_encode($data));
+		}
+	}else{
+		$data=array();
+		$data["debug"][0] = array("datetime"=>date("Y-m-d H:i:s"), "data"=>$var);
+		file_put_contents($filenamepath,json_encode($data));
+	}
+}
