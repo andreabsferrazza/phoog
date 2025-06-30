@@ -12,6 +12,6 @@
 
 ```
 bash
-composer require SBA/phoog:dev-main
+composer require andreabsferrazza/phoog:dev-main
 ```
 
