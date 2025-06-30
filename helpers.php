@@ -1,18 +1,69 @@
 <?php
 
-// shortcuts
-
 namespace {
-    use function Phoog\Deboog\vet as vet;
-    use function Phoog\Deboog\vip as vip;
-    use function Phoog\Deboog\evi as evi;
-    use function Phoog\Deboog\evid as evid;
-    use function Phoog\Deboog\sip as sip;
-    use function Phoog\Deboog\esp as esp;
-    use function Phoog\Deboog\espd as espd;
-    use function Phoog\Deboog\vit as vit;
-    use function Phoog\Deboog\evt as evt;
-    use function Phoog\Deboog\evc as evc;
-    use function Phoog\Deboog\evcd as evcd;
-}
+    if (!function_exists('vet')) {
+        function vet($args) {
+            return \Phoog\Deboog\vet($args);
+        }
+    }
 
+    if (!function_exists('vip')) {
+        function vip($args) {
+            return \Phoog\Deboog\vip($args);
+        }
+    }
+
+    if (!function_exists('evi')) {
+        function evi($args) {
+            return \Phoog\Deboog\evi($args);
+        }
+    }
+
+    if (!function_exists('evid')) {
+        function evid($args) {
+            return \Phoog\Deboog\evid($args);
+        }
+    }
+
+    if (!function_exists('sip')) {
+        function sip($args) {
+            return \Phoog\Deboog\sip($args);
+        }
+    }
+
+    if (!function_exists('esp')) {
+        function esp($args) {
+            return \Phoog\Deboog\esp($args);
+        }
+    }
+
+    if (!function_exists('espd')) {
+        function espd($args) {
+            return \Phoog\Deboog\espd($args);
+        }
+    }
+
+    if (!function_exists('vit')) {
+        function vit($args) {
+            return \Phoog\Deboog\vit($args);
+        }
+    }
+
+    if (!function_exists('evt')) {
+        function evt($args) {
+            return \Phoog\Deboog\evt($args);
+        }
+    }
+
+    if (!function_exists('evc')) {
+        function evc($args) {
+            return \Phoog\Deboog\evc($args);
+        }
+    }
+
+    if (!function_exists('evcd')) {
+        function evcd($args) {
+            return \Phoog\Deboog\evcd($args);
+        }
+    }
+}
